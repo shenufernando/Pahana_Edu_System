@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Book - Pahana Edu</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">📘 Pahana Edu</div>
+    <nav class="nav-links">
+      <a href="admin_dashboard.html">Home</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Edit Book Form -->
+  <section class="form-section">
+    <div class="form-container">
+      <h2>Edit Book</h2>
+
+      <form action="UpdateItemServlet" method="post" enctype="multipart/form-data">
+        <!-- Book code should be preserved (usually read-only or hidden) -->
+        <input type="hidden" name="itemCode" value="B101" />
+
+        <input type="text" name="itemName" placeholder="Book Title" value="The Hidden Island" required />
+        <input type="text" name="itemName" placeholder="Book Category" required />
+        <input type="number" name="price" placeholder="Price (Rs.)" value="1200" required />
+        <input type="number" name="quantity" placeholder="Available Quantity" value="10" required />
+
+        <label>Current Image</label><br/>
+        <img src="../images/B1.jfif" alt="Current Book" width="80" height="100" /><br/><br/>
+
+        <label>Upload New Image (optional)</label>
+        <input type="file" name="bookImage" accept="image/*" />
+
+        <input type="submit" value="Update Book" />
+      </form>
+
+      <a class="login-link" href="manage_items.html">Back to Manage Books</a>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register New User - Pahana Edu</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>User Signup - Pahana Edu</h2>
+
+    <form action="RegisterUserServlet" method="post">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" placeholder="Password" required />
+
+      <!-- Role Dropdown -->
+      <select name="role" required>
+        <option value="">Select Role</option> 
+        <option value="admin">Admin</option>
+        <option value="cashier">Cashier</option>
+      </select>
+
+      <input type="submit" value="Signup" />
+    </form>
+
+    <a class="login-link" href="login.html">Already have an account? Login</a>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
