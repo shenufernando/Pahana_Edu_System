@@ -1,17 +1,10 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: url("../images/book1.jpg") no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-}
+
 
 /* Navigation Bar */
 .navbar {
   background-color: #002147; /* Dark Blue */
   color: white;
-  padding: 20px 40px;
+  padding: 20px 40px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +20,7 @@ body {
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
-}
+} 
 
 .btn-guide {
   background-color: #ff9900;
@@ -832,8 +825,6 @@ body {
       background-color: darkred;
     }
 
-<<<<<<< HEAD
-=======
 /* manage Uses*/
     .btn-edit, .btn-delete {
       margin-right: 5px;
@@ -864,7 +855,6 @@ body {
       margin: 10px 0;
       padding: 8px;
     }
->>>>>>> b64c7c8 (Updated HTML structure, CSS styles, and Js interactions)
 
     .popup button {
       padding: 6px 12px;

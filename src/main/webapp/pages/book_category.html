@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Categories - Pahana Edu</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- 🔷 Navigation Header -->
+  <header class="navbar">
+    <div class="logo">📘 Pahana Edu</div>
+    <nav class="nav-links">
+      <a href="cashier_dashboard.html">Dashboard</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+  
+  <style>
+  /* 🔷 Header Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+}
+</style>
+
+  <!-- 🔶 Book Category Section -->
+  <section class="category-section">
+    <h2>📚 Book Categories</h2>
+    <div class="category-container">
+
+      <div class="category-box" onclick="showBooks('fiction')">
+        <img src="icons/fiction.png" alt="Fiction" />
+        <h3>Fiction</h3>
+      </div>
+
+      <div class="category-box" onclick="showBooks('children')">
+        <img src="icons/children.png" alt="Children" />
+        <h3>Children's Books</h3>
+      </div>
+
+      <div class="category-box" onclick="showBooks('shortstory')">
+        <img src="icons/shortstory.png" alt="Short Story" />
+        <h3>Short Stories</h3>
+      </div>
+
+    </div>
+
+    <!-- Book list section -->
+    <div id="book-list" class="book-list"></div>
+  </section>
+
+</body>
+</html>
